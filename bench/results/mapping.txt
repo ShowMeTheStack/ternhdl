@@ -1,0 +1,25 @@
+# Mapping results
+
+Placeholder area model (unary 1, binary 2, MUX3 3, DFF 4). Cells exclude TIE and DFF. B1 = MUX-based baseline; B3 = direct lowering (Park-style pattern mapping) after dead-code sweep; Ours = exact-database cut mapping of B3. Equiv = PDR equivalence of Ours vs RTL (E1). B2 = binary-encoded twin through Yosys: generic 2-input gates (abc -g simple) / Xilinx LUTs.
+
+| Design | DFF | B1 cells / depth | B3 cells / depth | Ours cells / depth / area | Ours vs B3 | Equiv | B2 E1 gates/LUTs | B2 E2 gates/LUTs |
+|---|---|---|---|---|---|---|---|---|
+| ripple9 | 0 | 195 / 56 | 47 / 20 | 45 / 19 / 90 | 4.3% | PASS 2.3s | 480/91 | 682/135 |
+| csel9 | 0 | 471 / 23 | 165 / 11 | 129 / 9 / 264 | 21.8% | PASS 5.6s | 946/139 | 1226/143 |
+| prefix9 | 0 | 476 / 14 | 228 / 9 | 102 / 7 / 252 | 55.3% | PASS 5.3s | 741/132 | 937/192 |
+| ripple27 | 0 | 573 / 164 | 137 / 56 | 135 / 55 / 270 | 1.5% | PASS 7.6s | 1451/282 | 2024/482 |
+| csel27 | 0 | 1377 / 29 | 495 / 17 | 387 / 15 / 792 | 21.8% | PASS 17.9s | 2916/377 | 3751/371 |
+| prefix27 | 0 | 1463 / 16 | 747 / 11 | 369 / 9 / 945 | 50.6% | PASS 20.1s | 2422/530 | 3064/747 |
+| satadd9 | 0 | 202 / 57 | 56 / 21 | 51 / 18 / 111 | 8.9% | PASS 2.6s | 499/101 | 627/120 |
+| cmp27 | 0 | 422 / 160 | 106 / 54 | 106 / 54 / 185 | 0.0% | PASS 4.2s | 414/82 | 318/84 |
+| alu9 | 0 | 561 / 54 | 199 / 21 | 193 / 20 / 404 | 3.0% | PASS 7.3s | 1398/338 | 1681/302 |
+| mul9 | 0 | 2931 / 122 | 945 / 54 | 543 / 48 / 1086 | 42.5% | TIMEOUT 1800.0s | 4659/1027 | 6215/1197 |
+| dot4x9 | 0 | 886 / 70 | 280 / 30 | 216 / 25 / 432 | 22.9% | PASS 17.9s | 1836/394 | 2324/364 |
+| tritsum27 | 0 | 1329 / 72 | 459 / 60 | 173 / 29 / 346 | 62.3% | PASS 20.3s | 1940/318 | 1729/271 |
+| counter9 | 9 | 148 / 52 | 60 / 20 | 59 / 13 / 139 | 1.7% | PASS 2.3s | 110/22 | 105/27 |
+| shiftreg4x9 | 36 | 72 / 2 | 72 / 2 | 72 / 2 / 360 | 0.0% | PASS 1.8s | 72/0 | 72/0 |
+| fifo3x9 | 31 | 210 / 29 | 126 / 17 | 108 / 12 / 386 | 14.3% | PASS 3.9s | 221/40 | 226/42 |
+| regfile9x9 | 81 | 479 / 17 | 315 / 9 | 265 / 6 / 1082 | 15.9% | PASS 11.5s | 956/193 | 982/191 |
+| mulfsm9 | 48 | 621 / 109 | 295 / 41 | 295 / 41 / 918 | 0.0% | PASS 30.2s | 1272/307 | 1657/267 |
+| irqctl9 | 18 | 261 / 30 | 153 / 18 | 153 / 18 / 369 | 0.0% | PASS 4.4s | 118/35 | 110/37 |
+| traffic | 3 | 59 / 14 | 25 / 8 | 27 / 8 / 55 | -8.0% | PASS 0.7s | 40/12 | 39/11 |

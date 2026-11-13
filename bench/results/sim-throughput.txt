@@ -1,0 +1,7 @@
+# 2026-11-13T12:56:11+05:30 taskset -c 0 nice -n 10 java org.ternhdl.sim.Bench, three runs, commit de644c7
+sliced: 131 nodes, 156465 cycles/s x 64 lanes = 10.01 M lane-cycles/s
+interpreter: 22304 cycles/s
+sliced: 131 nodes, 151536 cycles/s x 64 lanes = 9.70 M lane-cycles/s
+interpreter: 22531 cycles/s
+sliced: 131 nodes, 153123 cycles/s x 64 lanes = 9.80 M lane-cycles/s
+interpreter: 22422 cycles/s

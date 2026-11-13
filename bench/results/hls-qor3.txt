@@ -1,0 +1,6 @@
+| Kernel | Variant | States | LUT | FF | Fmax (MHz) | note |
+|---|---|---|---|---|---|---|
+| matvec | ripple model + ripple adders | 12 | 504 | 414 | 108.4 |  |
+| matvec | prefix model + prefix adders | 10 | 660 | 331 | 102.8 |  |
+| digitsum | ripple model + ripple adders | 7 | 170 | 241 | 78.2 |  |
+| digitsum | prefix model + prefix adders | 6 | 125 | 217 | 175.8 |  |

@@ -1,0 +1,8 @@
+| Kernel | Variant | States | LUT | FF | Fmax (MHz) | note |
+|---|---|---|---|---|---|---|
+| fir | ripple model + ripple adders | 11 | 633 | 602 | 78.5 |  |
+| fir | prefix model + prefix adders | 8 | 1290 | 429 | 65.2 |  |
+| dot | ripple model + ripple adders | 7 | 305 | 377 | 84.0 |  |
+| dot | prefix model + prefix adders | 6 | 391 | 305 | 95.2 |  |
+| bubble | ripple model + ripple adders | 14 | 398 | 295 | 137.1 |  |
+| bubble | prefix model + prefix adders | 12 | 366 | 219 | 121.3 |  |

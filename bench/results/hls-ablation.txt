@@ -1,0 +1,47 @@
+| Kernel | Variant | States | Temps | Ops | IR nodes | Avg cycles | Check |
+|---|---|---|---|---|---|---|---|
+| poly | budget 40, ripple, strength-reduce | 13 | 27 | 41 | 473 | 12.0 | OK |
+| poly | budget 40, ripple, no strength-reduce | 13 | 27 | 44 | 506 | 12.0 | OK |
+| poly | budget 40, prefix cost model | 6 | 12 | 41 | 333 | 5.0 | OK |
+| poly | budget 15 (deeper pipelining of the FSM) | 16 | 36 | 41 | 551 | 15.0 | OK |
+| poly | budget 120 (more chaining) | 6 | 11 | 41 | 326 | 5.0 | OK |
+| fir | budget 40, ripple, strength-reduce | 11 | 16 | 26 | 311 | 144.0 | OK |
+| fir | budget 40, ripple, no strength-reduce | 11 | 16 | 29 | 345 | 144.0 | OK |
+| fir | budget 40, prefix cost model | 8 | 6 | 26 | 226 | 84.0 | OK |
+| fir | budget 15 (deeper pipelining of the FSM) | 12 | 22 | 26 | 358 | 164.0 | OK |
+| fir | budget 120 (more chaining) | 8 | 5 | 26 | 219 | 84.0 | OK |
+| dot | budget 40, ripple, strength-reduce | 7 | 2 | 8 | 132 | 33.8 | OK |
+| dot | budget 40, ripple, no strength-reduce | 7 | 2 | 8 | 132 | 33.8 | OK |
+| dot | budget 40, prefix cost model | 6 | 0 | 8 | 113 | 23.9 | OK |
+| dot | budget 15 (deeper pipelining of the FSM) | 7 | 2 | 8 | 132 | 33.8 | OK |
+| dot | budget 120 (more chaining) | 6 | 0 | 8 | 113 | 23.9 | OK |
+| sumsq | budget 40, ripple, strength-reduce | 33 | 54 | 58 | 749 | 346.2 | OK |
+| sumsq | budget 40, ripple, no strength-reduce | 33 | 54 | 58 | 749 | 346.2 | OK |
+| sumsq | budget 40, prefix cost model | 14 | 32 | 58 | 500 | 122.0 | OK |
+| sumsq | budget 15 (deeper pipelining of the FSM) | 33 | 54 | 58 | 749 | 346.2 | OK |
+| sumsq | budget 120 (more chaining) | 19 | 38 | 58 | 567 | 181.0 | OK |
+| gcd | budget 40, ripple, strength-reduce | 9 | 0 | 7 | 94 | 174.1 | OK |
+| gcd | budget 40, ripple, no strength-reduce | 9 | 0 | 7 | 94 | 174.1 | OK |
+| gcd | budget 40, prefix cost model | 9 | 0 | 7 | 94 | 174.1 | OK |
+| gcd | budget 15 (deeper pipelining of the FSM) | 11 | 2 | 7 | 118 | 216.7 | OK |
+| gcd | budget 120 (more chaining) | 9 | 0 | 7 | 94 | 174.1 | OK |
+| bubble | budget 40, ripple, strength-reduce | 14 | 5 | 16 | 219 | 257.7 | OK |
+| bubble | budget 40, ripple, no strength-reduce | 14 | 5 | 16 | 219 | 257.7 | OK |
+| bubble | budget 40, prefix cost model | 12 | 2 | 16 | 188 | 177.7 | OK |
+| bubble | budget 15 (deeper pipelining of the FSM) | 14 | 5 | 16 | 219 | 257.7 | OK |
+| bubble | budget 120 (more chaining) | 12 | 2 | 16 | 188 | 177.7 | OK |
+| tmix | budget 40, ripple, strength-reduce | 3 | 0 | 7 | 53 | 2.0 | OK |
+| tmix | budget 40, ripple, no strength-reduce | 3 | 0 | 7 | 53 | 2.0 | OK |
+| tmix | budget 40, prefix cost model | 3 | 0 | 7 | 53 | 2.0 | OK |
+| tmix | budget 15 (deeper pipelining of the FSM) | 5 | 3 | 7 | 84 | 4.0 | OK |
+| tmix | budget 120 (more chaining) | 3 | 0 | 7 | 53 | 2.0 | OK |
+| matvec | budget 40, ripple, strength-reduce | 12 | 5 | 22 | 256 | 125.0 | OK |
+| matvec | budget 40, ripple, no strength-reduce | 17 | 15 | 32 | 405 | 208.0 | OK |
+| matvec | budget 40, prefix cost model | 10 | 1 | 22 | 218 | 71.0 | OK |
+| matvec | budget 15 (deeper pipelining of the FSM) | 14 | 9 | 22 | 294 | 127.0 | OK |
+| matvec | budget 120 (more chaining) | 10 | 1 | 22 | 218 | 71.0 | OK |
+| digitsum | budget 40, ripple, strength-reduce | 7 | 3 | 8 | 105 | 36.4 | OK |
+| digitsum | budget 40, ripple, no strength-reduce | 9 | 6 | 10 | 146 | 58.0 | OK |
+| digitsum | budget 40, prefix cost model | 6 | 0 | 8 | 79 | 25.6 | OK |
+| digitsum | budget 15 (deeper pipelining of the FSM) | 7 | 3 | 8 | 105 | 36.4 | OK |
+| digitsum | budget 120 (more chaining) | 6 | 0 | 8 | 79 | 25.6 | OK |

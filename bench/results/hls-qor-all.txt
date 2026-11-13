@@ -1,0 +1,20 @@
+| Kernel | Variant | States | LUT | FF | Fmax (MHz) | note |
+|---|---|---|---|---|---|---|
+| tmix | ripple model + ripple adders | 3 | 73 | 125 | 123.4 |  |
+| tmix | prefix model + prefix adders | 3 | 120 | 125 | 113.6 |  |
+| poly | ripple model + ripple adders | 13 | 706 | 631 | 101.0 |  |
+| poly | prefix model + prefix adders | 6 | 1309 | 313 | 81.7 |  |
+| gcd | ripple model + ripple adders | 9 | 154 | 116 | 122.3 |  |
+| gcd | prefix model + prefix adders | 9 | 183 | 116 | 153.3 |  |
+| sumsq | ripple model + ripple adders | 33 | 2638 | 2416 | 56.9 |  |
+| sumsq | prefix model + prefix adders | 14 | 5624 | 1270 | 50.9 |  |
+| fir | ripple model + ripple adders | 11 | 633 | 602 | 78.5 |  |
+| fir | prefix model + prefix adders | 8 | 1290 | 429 | 65.2 |  |
+| dot | ripple model + ripple adders | 7 | 305 | 377 | 84.0 |  |
+| dot | prefix model + prefix adders | 6 | 391 | 305 | 95.2 |  |
+| bubble | ripple model + ripple adders | 14 | 398 | 295 | 137.1 |  |
+| bubble | prefix model + prefix adders | 12 | 366 | 219 | 121.3 |  |
+| matvec | ripple model + ripple adders | 12 | 504 | 414 | 108.4 |  |
+| matvec | prefix model + prefix adders | 10 | 660 | 331 | 102.8 |  |
+| digitsum | ripple model + ripple adders | 7 | 170 | 241 | 78.2 |  |
+| digitsum | prefix model + prefix adders | 6 | 125 | 217 | 175.8 |  |

@@ -1,0 +1,27 @@
+TernHDL
+Copyright (C) 2026 Jyotiprakash Mishra
+https://github.com/ShowMeTheStack/ternhdl
+
+Licensing
+
+Everything in this repository is licensed under the GNU General Public License, version 3 (see
+LICENSE), with the additional term below. There is no Classpath Exception.
+
+TernHDL does not modify any OpenJDK source file. If a later version contains modified OpenJDK
+sources, those files will be kept in a separate directory and licensed under the same terms as
+OpenJDK (GNU General Public License, version 2, with the Classpath Exception), with their own
+LICENSE file in that directory.
+
+The Gradle wrapper files (gradlew, gradlew.bat, gradle/wrapper/) are distributed by Gradle under
+the Apache License, version 2.0.
+
+Additional term under section 7(b) of the GNU General Public License, version 3
+
+This term applies to all parts of TernHDL that are licensed under GPLv3. You must preserve the
+following author attribution:
+
+    TernHDL, by Jyotiprakash Mishra (https://github.com/ShowMeTheStack/ternhdl)
+
+in every copy of the source code you convey, in this NOTICE file, and in the Appropriate Legal
+Notices displayed by any work that contains TernHDL or a work based on it. You may not remove or
+alter this attribution, or misrepresent the origin of the material.
